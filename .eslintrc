@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "airbnb"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "max-len": [1, 120, 2],
+    "no-console": 1,
+    "no-debugger": 1,
+    "import/prefer-default-export": 0,
+    "linebreak-style": 0
+  },
+  "globals": {
+  }
+}

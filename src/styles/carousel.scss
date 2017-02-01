@@ -1,0 +1,44 @@
+.carousel-component {
+  cursor: pointer;
+  position: absolute;
+
+  &-left-button,
+  &-right-button {
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    color: #680b4b;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    font-size: 48px;
+
+    &:hover {
+      color: #b51380;
+      opacity: 1;
+    }
+
+    &:focus,
+    &:active {
+      outline:none;
+    }
+  }
+
+  &-left-button {
+    left: 10px;
+    position: absolute;
+  }
+
+  &-right-button {
+    right: 10px;
+    position: absolute;
+  }
+
+  &-img {
+    max-width: 100%;
+  }
+
+  &-text-box {
+    position: absolute;
+    bottom: 60px;
+  }
+}
