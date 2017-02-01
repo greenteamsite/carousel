@@ -8,7 +8,7 @@ function Index(props) {
   const baseClass = 'index-component';
   return (
     <div className={baseClass}>
-      <img alt="logo" src="../images/logo.png" />
+      <img className={`${baseClass}-logo`} alt="logo" src="../images/logo.png" />
       <Carousel items={props.caruselItems} />
     </div>
   );

@@ -20,7 +20,7 @@ function Carousel(props) {
         {'>'}
       </button>
       <div className={`${baseClass}-text-box`}>
-        {props.title}
+        <h3>{props.title}</h3>
         {props.synopsis}
       </div>
     </div>

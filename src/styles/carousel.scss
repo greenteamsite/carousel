@@ -1,16 +1,18 @@
 .carousel-component {
   cursor: pointer;
   position: absolute;
+  width: 100%;
 
   &-left-button,
   &-right-button {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     border: 0;
     color: #680b4b;
     height: 100%;
     opacity: 0;
     cursor: pointer;
     font-size: 48px;
+    z-index: 1;
 
     &:hover {
       color: #b51380;
@@ -19,7 +21,7 @@
 
     &:focus,
     &:active {
-      outline:none;
+      outline: none;
     }
   }
 
@@ -34,11 +36,14 @@
   }
 
   &-img {
-    max-width: 100%;
+    width: 100%;
   }
 
   &-text-box {
     position: absolute;
-    bottom: 60px;
+    bottom: 20px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
