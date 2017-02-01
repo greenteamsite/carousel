@@ -11,7 +11,7 @@
     "open:src": "babel-node srcServer.js",
     "lint": "esw webpack.config.* src",
     "lint:watch": "npm run lint -- --watch",
-    "test": "mocha tools/testSetup.js \"src/**/*.spec.js\" --reporter progress"
+    "test": "mocha testSetup.js \"test/**/*.{js,jsx}\""
   },
   "dependencies": {
     "babel-polyfill": "6.22.0",
@@ -44,6 +44,8 @@
     "eslint-plugin-react": "6.9.0",
     "eslint-watch": "2.1.14",
     "file-loader": "0.10.0",
+    "jsdom": "9.9.1",
+    "jsdom-global": "2.1.1",
     "json-loader": "0.5.4",
     "mocha": "3.2.0",
     "node-sass": "4.4.0",
